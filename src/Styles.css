@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+    border-radius: 5%;
+    border-color:aquamarine;
+    background-color: azure;
+}
+
+td {
+    width: 150px;
+    height: 150px;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 450px;
+}
