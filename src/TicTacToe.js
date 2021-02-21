@@ -50,6 +50,10 @@ class TicTacToe extends React.Component {
         this.setState({gameOver: true, winner: player + ' Wins!'})
     }
 
+    resetGame = () => {
+        this.setState({playersTurn: 'X', board: [["","",""],["","",""],["","",""]], turn: 1, gameOver: false, winner: ''});
+    }
+
     render() {
         return (
             <div className="center-div">
@@ -73,6 +77,7 @@ class TicTacToe extends React.Component {
                     </thead>
                 </table>
                 <h1>{this.state.winner}</h1>
+                <button onClick={() => this.resetGame()}>Reset board</button>
             </div>
         )
     }
